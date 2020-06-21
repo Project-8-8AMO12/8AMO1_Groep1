@@ -50,7 +50,7 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: rgb(189, 189, 81);
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -64,12 +64,21 @@
             }
 
             .content-box{
-                width: 70vw;
+                width: 100vw;
                 margin: 0 auto;
+                padding: 30px;
                 background-color: rgb(50,50,50);
+                border-radius: 25px;
             }
 
+            .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link{
+                color: rgb(235, 235, 52)!important;
+                text-decoration: underline;
+            }
 
+            .navbar-dark .navbar-nav .nav-link{
+                color: rgb(189, 189, 81);!important
+            }
 
             .spacer{
                 height: 50px;
@@ -78,6 +87,20 @@
             footer{
                 background-color: rgb(50,50,50);
             }
+
+            .list-unstyled a{
+                color:rgb(189, 189, 81);!important
+            }
+
+            .social-links{
+                color: rgb(189, 189, 81) !important;
+            }
+
+            .social-links:hover{
+                text-decoration: underline !important;
+
+            }
+
 
 
 
@@ -145,14 +168,61 @@
 
     <div class="spacer"></div>
 
-    <div class="d-flex content-box">
-        <img class="m-2" width="60%" src="https://www.scitecheuropa.eu/wp-content/uploads/2019/09/Bee-hiding.jpg">
-        <p class="m-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi enim, lacinia vitae odio eget, porttitor malesuada mi. Praesent maximus, tellus sed semper congue, nibh felis vehicula turpis, ac iaculis orci lacus id turpis. Aliquam quis feugiat dolor. Aenean consequat faucibus molestie. Aenean pharetra leo ut euismod venenatis. Maecenas non orci neque. Donec lorem enim, vulputate sit amet suscipit sed, lacinia et justo. Sed congue libero quis placerat tincidunt.
-            <br/>
-            Integer egestas posuere quam in varius. Morbi vitae lacus laoreet, ornare nisl in, auctor enim. Proin eu auctor augue. Nam turpis libero, condimentum sed consequat at, vulputate vitae nisi. Nullam id ultrices augue, sit amet semper orci. Morbi elit sem, volutpat et tellus id, dictum lobortis erat. Etiam aliquet massa felis, ut sodales sapien feugiat sit amet. Integer dictum dolor ut dolor luctus blandit. Nunc scelerisque rutrum diam sit amet pellentesque.
-        </p>
+
+    <h1 class="text-center">News</h1>
+    <div class="container content-box">
+        <div class="row">
+            <img  class="col-sm-12 col-lg-6 col-md-12" style="width: 100%; height:0%" src="https://www.scitecheuropa.eu/wp-content/uploads/2019/09/Bee-hiding.jpg">
+                <p class="col-sm-12 col-lg-6 col-md-12">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi enim, lacinia vitae odio eget, porttitor malesuada mi. Praesent maximus, tellus sed semper congue, nibh felis vehicula turpis, ac iaculis orci lacus id turpis. Aliquam quis feugiat dolor. Aenean consequat faucibus molestie. Aenean pharetra leo ut euismod venenatis. Maecenas non orci neque. Donec lorem enim, vulputate sit amet suscipit sed, lacinia et justo. Sed congue libero quis placerat tincidunt.
+                    <br/>
+                    Integer egestas posuere quam in varius. Morbi vitae lacus laoreet, ornare nisl in, auctor enim. Proin eu auctor augue. Nam turpis libero, condimentum sed consequat at, vulputate vitae nisi. Nullam id ultrices augue, sit amet semper orci. Morbi elit sem, volutpat et tellus id, dictum lobortis erat. Etiam aliquet massa felis, ut sodales sapien feugiat sit amet. Integer dictum dolor ut dolor luctus blandit. Nunc scelerisque rutrum diam sit amet pellentesque.
+                </p>
+        </div>
     </div>
+
+    <div class="spacer"></div>
+
+    <h1 class="text-center">Information</h1>
+    <div class="container content-box">
+        <div class="row">
+          <p class="col-sm-12 col-lg-12 col-md-12" style="background-color: rgb(40,40,40); border-radius:25px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi enim, lacinia vitae odio eget, porttitor malesuada mi. Praesent maximus, tellus sed semper congue, nibh felis vehicula turpis, ac iaculis orci lacus id turpis. Aliquam quis feugiat dolor. Aenean consequat faucibus molestie. Aenean pharetra leo ut euismod venenatis. Maecenas non orci neque. Donec lorem enim, vulputate sit amet suscipit sed, lacinia et justo. Sed congue libero quis placerat tincidunt.
+                <br/>
+                Integer egestas posuere quam in varius. Morbi vitae lacus laoreet, ornare nisl in, auctor enim. Proin eu auctor augue. Nam turpis libero, condimentum sed consequat at, vulputate vitae nisi. Nullam id ultrices augue, sit amet semper orci. Morbi elit sem, volutpat et tellus id, dictum lobortis erat. Etiam aliquet massa felis, ut sodales sapien feugiat sit amet. Integer dictum dolor ut dolor luctus blandit. Nunc scelerisque rutrum diam sit amet pellentesque.
+            </p>
+
+            <p class="col-sm-12 col-lg-12 col-md-12" style="background-color: rgb(40,40,40); border-radius:25px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi enim, lacinia vitae odio eget, porttitor malesuada mi. Praesent maximus, tellus sed semper congue, nibh felis vehicula turpis, ac iaculis orci lacus id turpis. Aliquam quis feugiat dolor. Aenean consequat faucibus molestie. Aenean pharetra leo ut euismod venenatis. Maecenas non orci neque. Donec lorem enim, vulputate sit amet suscipit sed, lacinia et justo. Sed congue libero quis placerat tincidunt.
+                <br/>
+                Integer egestas posuere quam in varius. Morbi vitae lacus laoreet, ornare nisl in, auctor enim. Proin eu auctor augue. Nam turpis libero, condimentum sed consequat at, vulputate vitae nisi. Nullam id ultrices augue, sit amet semper orci. Morbi elit sem, volutpat et tellus id, dictum lobortis erat. Etiam aliquet massa felis, ut sodales sapien feugiat sit amet. Integer dictum dolor ut dolor luctus blandit. Nunc scelerisque rutrum diam sit amet pellentesque.
+            </p>
+
+            <p class="col-sm-12 col-lg-12 col-md-12" style="background-color: rgb(40,40,40); border-radius:25px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi enim, lacinia vitae odio eget, porttitor malesuada mi. Praesent maximus, tellus sed semper congue, nibh felis vehicula turpis, ac iaculis orci lacus id turpis. Aliquam quis feugiat dolor. Aenean consequat faucibus molestie. Aenean pharetra leo ut euismod venenatis. Maecenas non orci neque. Donec lorem enim, vulputate sit amet suscipit sed, lacinia et justo. Sed congue libero quis placerat tincidunt.
+                <br/>
+                Integer egestas posuere quam in varius. Morbi vitae lacus laoreet, ornare nisl in, auctor enim. Proin eu auctor augue. Nam turpis libero, condimentum sed consequat at, vulputate vitae nisi. Nullam id ultrices augue, sit amet semper orci. Morbi elit sem, volutpat et tellus id, dictum lobortis erat. Etiam aliquet massa felis, ut sodales sapien feugiat sit amet. Integer dictum dolor ut dolor luctus blandit. Nunc scelerisque rutrum diam sit amet pellentesque.
+            </p>
+        </div>
+    </div>
+
+{{--    Grid system --}}
+
+
+
+{{--    <div class="row">--}}
+{{--        <div class="col">--}}
+{{--            <img src="https://www.scitecheuropa.eu/wp-content/uploads/2019/09/Bee-hiding.jpg">--}}
+{{--        </div>--}}
+{{--        <div class="col">--}}
+{{--            <p>--}}
+{{--                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi enim, lacinia vitae odio eget, porttitor malesuada mi. Praesent maximus, tellus sed semper congue, nibh felis vehicula turpis, ac iaculis orci lacus id turpis. Aliquam quis feugiat dolor. Aenean consequat faucibus molestie. Aenean pharetra leo ut euismod venenatis. Maecenas non orci neque. Donec lorem enim, vulputate sit amet suscipit sed, lacinia et justo. Sed congue libero quis placerat tincidunt.--}}
+{{--                <br/>--}}
+{{--                Integer egestas posuere quam in varius. Morbi vitae lacus laoreet, ornare nisl in, auctor enim. Proin eu auctor augue. Nam turpis libero, condimentum sed consequat at, vulputate vitae nisi. Nullam id ultrices augue, sit amet semper orci. Morbi elit sem, volutpat et tellus id, dictum lobortis erat. Etiam aliquet massa felis, ut sodales sapien feugiat sit amet. Integer dictum dolor ut dolor luctus blandit. Nunc scelerisque rutrum diam sit amet pellentesque.--}}
+{{--            </p>--}}
+
+{{--        </div>--}}
+{{--    </div>--}}
 
     <div class="spacer"></div>
 
@@ -168,7 +238,6 @@
                 <!-- Grid column -->
                 <!-- Grid column -->
 
-                <hr class="clearfix w-100 d-md-none">
 
                 <!-- Grid column -->
                 <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
@@ -190,14 +259,7 @@
                     </ul>
 
                 </div>
-                <!-- Grid column -->
 
-                <hr class="clearfix w-100 d-md-none">
-
-
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none">
 
                 <!-- Grid column -->
                 <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
@@ -206,22 +268,17 @@
                     <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
 
                     <!-- Facebook -->
-                    <a type="button" class="btn-floating btn-fb">
-                        <i class="fab fa-facebook-f"></i>
+                    <a type="button" class="btn-floating social-links">
+                        <span>Instagram</span>
                     </a>
                     <!-- Twitter -->
-                    <a type="button" class="btn-floating btn-tw">
-                        <i class="fab fa-twitter"></i>
+                    <a type="button" class="btn-floating social-links">
+                        <span>Facebook</span>
                     </a>
                     <!-- Google +-->
-                    <a type="button" class="btn-floating btn-gplus">
-                        <i class="fab fa-google-plus-g"></i>
+                    <a type="button" class="btn-floating social-links">
+                        <span>Email</span>
                     </a>
-                    <!-- Dribbble -->
-                    <a type="button" class="btn-floating btn-dribbble">
-                        <i class="fab fa-dribbble"></i>
-                    </a>
-
                 </div>
                 <!-- Grid column -->
 
