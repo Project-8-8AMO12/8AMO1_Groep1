@@ -186,7 +186,7 @@
 <div class="spacer"></div>
 
 
-<h1 class="text-center">Stertselaar</h1>
+<h1 class="text-center">Cursussen</h1>
 <div class="container content-box">
     <table class="table">
         <tbody>
