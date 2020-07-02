@@ -15,6 +15,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/depot', function () {
+    return view('depot');
+});
+
+Route::get('/stertselaar', function () {
+    return view('stertselaar');
+});
+
+Route::get('/activiteiten', function () {
+    return view('activiteiten');
+});
+
+Route::get('/cursussen', function () {
+    return view('cursussen');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
+@extends('layouts/pages')
+            @section('style')
             html, body {
-                background-color: #fff;
+                background-color: rgb(35,35,35);
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -49,7 +38,7 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: rgb(189, 189, 81);
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -61,39 +50,109 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+            .content-box{
+                width: 100vw;
+                margin: 0 auto;
+                padding: 30px;
+                background-color: rgb(50,50,50);
+                border-radius: 25px;
+            }
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+            .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link{
+                color: rgb(235, 235, 52)!important;
+                text-decoration: underline;
+            }
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+            .navbar-dark .navbar-nav .nav-link{
+                color: rgb(189, 189, 81);!important
+            }
+
+            .spacer{
+                height: 50px;
+            }
+
+            footer{
+                background-color: rgb(50,50,50);
+            }
+
+            .list-unstyled a{
+                color:rgb(189, 189, 81);!important
+            }
+
+            .social-links{
+                color: rgb(189, 189, 81) !important;
+            }
+
+            .social-links:hover{
+                text-decoration: underline !important;
+
+            }
+        @endsection
+
+        @section('header')
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="width: 75vw; margin: 0 auto; height: auto;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.wallpapersden.com/image/download/bee-flower-pollination_25261_1920x1080.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.wallpaperscraft.com/image/bee_sunflower_macro_142883_1920x1080.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://wallpaperstock.net/bee-on-yellow-flower_wallpapers_1030_1920x1080.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
-    </body>
-</html>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+        @endsection
+        @section('content')
+
+    <h1 class="text-center">News</h1>
+    <div class="container content-box">
+        <div class="row">
+            <img  class="col-sm-12 col-lg-6 col-md-12" style="width: 100%; height:0%" src="https://www.scitecheuropa.eu/wp-content/uploads/2019/09/Bee-hiding.jpg">
+                <p class="col-sm-12 col-lg-6 col-md-12">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi enim, lacinia vitae odio eget, porttitor malesuada mi. Praesent maximus, tellus sed semper congue, nibh felis vehicula turpis, ac iaculis orci lacus id turpis. Aliquam quis feugiat dolor. Aenean consequat faucibus molestie. Aenean pharetra leo ut euismod venenatis. Maecenas non orci neque. Donec lorem enim, vulputate sit amet suscipit sed, lacinia et justo. Sed congue libero quis placerat tincidunt.
+                    <br/>
+                    Integer egestas posuere quam in varius. Morbi vitae lacus laoreet, ornare nisl in, auctor enim. Proin eu auctor augue. Nam turpis libero, condimentum sed consequat at, vulputate vitae nisi. Nullam id ultrices augue, sit amet semper orci. Morbi elit sem, volutpat et tellus id, dictum lobortis erat. Etiam aliquet massa felis, ut sodales sapien feugiat sit amet. Integer dictum dolor ut dolor luctus blandit. Nunc scelerisque rutrum diam sit amet pellentesque.
+                </p>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <h1 class="text-center">Information</h1>
+    <div class="container content-box">
+        <div class="row">
+          <p class="col-sm-12 col-lg-12 col-md-12" style="background-color: rgb(40,40,40); border-radius:25px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi enim, lacinia vitae odio eget, porttitor malesuada mi. Praesent maximus, tellus sed semper congue, nibh felis vehicula turpis, ac iaculis orci lacus id turpis. Aliquam quis feugiat dolor. Aenean consequat faucibus molestie. Aenean pharetra leo ut euismod venenatis. Maecenas non orci neque. Donec lorem enim, vulputate sit amet suscipit sed, lacinia et justo. Sed congue libero quis placerat tincidunt.
+                <br/>
+                Integer egestas posuere quam in varius. Morbi vitae lacus laoreet, ornare nisl in, auctor enim. Proin eu auctor augue. Nam turpis libero, condimentum sed consequat at, vulputate vitae nisi. Nullam id ultrices augue, sit amet semper orci. Morbi elit sem, volutpat et tellus id, dictum lobortis erat. Etiam aliquet massa felis, ut sodales sapien feugiat sit amet. Integer dictum dolor ut dolor luctus blandit. Nunc scelerisque rutrum diam sit amet pellentesque.
+            </p>
+
+            <p class="col-sm-12 col-lg-12 col-md-12" style="background-color: rgb(40,40,40); border-radius:25px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi enim, lacinia vitae odio eget, porttitor malesuada mi. Praesent maximus, tellus sed semper congue, nibh felis vehicula turpis, ac iaculis orci lacus id turpis. Aliquam quis feugiat dolor. Aenean consequat faucibus molestie. Aenean pharetra leo ut euismod venenatis. Maecenas non orci neque. Donec lorem enim, vulputate sit amet suscipit sed, lacinia et justo. Sed congue libero quis placerat tincidunt.
+                <br/>
+                Integer egestas posuere quam in varius. Morbi vitae lacus laoreet, ornare nisl in, auctor enim. Proin eu auctor augue. Nam turpis libero, condimentum sed consequat at, vulputate vitae nisi. Nullam id ultrices augue, sit amet semper orci. Morbi elit sem, volutpat et tellus id, dictum lobortis erat. Etiam aliquet massa felis, ut sodales sapien feugiat sit amet. Integer dictum dolor ut dolor luctus blandit. Nunc scelerisque rutrum diam sit amet pellentesque.
+            </p>
+
+            <p class="col-sm-12 col-lg-12 col-md-12" style="background-color: rgb(40,40,40); border-radius:25px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi enim, lacinia vitae odio eget, porttitor malesuada mi. Praesent maximus, tellus sed semper congue, nibh felis vehicula turpis, ac iaculis orci lacus id turpis. Aliquam quis feugiat dolor. Aenean consequat faucibus molestie. Aenean pharetra leo ut euismod venenatis. Maecenas non orci neque. Donec lorem enim, vulputate sit amet suscipit sed, lacinia et justo. Sed congue libero quis placerat tincidunt.
+                <br/>
+                Integer egestas posuere quam in varius. Morbi vitae lacus laoreet, ornare nisl in, auctor enim. Proin eu auctor augue. Nam turpis libero, condimentum sed consequat at, vulputate vitae nisi. Nullam id ultrices augue, sit amet semper orci. Morbi elit sem, volutpat et tellus id, dictum lobortis erat. Etiam aliquet massa felis, ut sodales sapien feugiat sit amet. Integer dictum dolor ut dolor luctus blandit. Nunc scelerisque rutrum diam sit amet pellentesque.
+            </p>
+        </div>
+    </div>
+@endsection
+
+
+
